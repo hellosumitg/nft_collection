@@ -242,6 +242,6 @@ To make the collection available on Opensea, we would need to create a metadata 
 
 - Your NFT is now available on Opensea 🚀 🥳
 
-You can check my final website here :- [nft_collection](https://nft-collection-sumitdevtech.vercel.app/)
+You can check my final website here :- [nft_collection](https://nft-collection-hellosumitg.vercel.app/)
 
 Special thanks 🙏🏻 to team@LearnWeb3DAO 😇
