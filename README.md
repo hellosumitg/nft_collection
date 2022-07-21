@@ -85,7 +85,7 @@ yarn add @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ether
   yarn add @openzeppelin/contracts
   ```
 
-- We will need to call the `Whitelist Contract` that we had deployed at our previous [github repo](https://github.com/sumitdevtech/whitelist-dapp/blob/main/hardhat/contracts/Whitelist.sol) to check for addresses that were whitelisted in that project and give them presale access. As we only need to call `mapping(address => bool) public whitelistedAddresses;` We can create an interface for `Whitelist contract` with a function only for this mapping, in this way we would save `gas` as we would not need to inherit and deploy the entire `Whitelist Contract` but only a part of it.
+- We will need to call the `Whitelist Contract` that we had deployed at our previous [github repo](https://github.com/hellosumitg/whitelist-dapp/blob/main/hardhat/contracts/Whitelist.sol) to check for addresses that were whitelisted in that project and give them presale access. As we only need to call `mapping(address => bool) public whitelistedAddresses;` We can create an interface for `Whitelist contract` with a function only for this mapping, in this way we would save `gas` as we would not need to inherit and deploy the entire `Whitelist Contract` but only a part of it.
 
 - Create a new file inside the `contracts` directory and call it `IWhitelist.sol` as shown in the repo...
 
@@ -104,7 +104,7 @@ yarn add @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ether
 - Lets deploy the contract to `rinkeby` network. Create a new file named `deploy.js` under the `scripts` folder as shown in the repo...
 
 - As you can read, `deploy.js` requires some constants. Lets create a folder named `constants` under the `hardhat` folder
-- Now add an `index.js` file inside the `constants` folder and add the lines of code to the file as shown in the above repo with the address of the whitelist contract that we had deployed at our previous project[github repo](https://github.com/sumitdevtech/whitelist-dapp/blob/main/next-app/constants/index.js). For Metadata_URL, just copy the sample one that has been provided in this repo. We would replace this later.
+- Now add an `index.js` file inside the `constants` folder and add the lines of code to the file as shown in the above repo with the address of the whitelist contract that we had deployed at our previous project[github repo](https://github.com/hellosumitg/whitelist-dapp/blob/main/next-app/constants/index.js). For Metadata_URL, just copy the sample one that has been provided in this repo. We would replace this later.
 
 - Now open the hardhat.config.js file, we would add the `rinkeby` network here so that we can deploy our contract to rinkeby as shown in this repo...
   
