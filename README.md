@@ -99,14 +99,14 @@ yarn add @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ether
   yarn add dotenv
   ```
 
-- Now create a `.env` file in the `hardhat` folder and add the following lines, use the instructions in the comments to get your Alchemy API Key URL and RINKEBY Private Key. Make sure that the account from which you get your rinkeby private key is funded with Rinkeby Ether as shown in the repo...
+- Now create a `.env` file in the `hardhat` folder and add the following lines, use the instructions in the comments to get your Alchemy API Key URL and GOERLI Private Key. Make sure that the account from which you get your goerli private key is funded with Goerli Ether as shown in the repo...
 
-- Lets deploy the contract to `rinkeby` network. Create a new file named `deploy.js` under the `scripts` folder as shown in the repo...
+- Lets deploy the contract to `goerli` network. Create a new file named `deploy.js` under the `scripts` folder as shown in the repo...
 
 - As you can read, `deploy.js` requires some constants. Lets create a folder named `constants` under the `hardhat` folder
 - Now add an `index.js` file inside the `constants` folder and add the lines of code to the file as shown in the above repo with the address of the whitelist contract that we had deployed at our previous project[github repo](https://github.com/hellosumitg/whitelist-dapp/blob/main/next-app/constants/index.js). For Metadata_URL, just copy the sample one that has been provided in this repo. We would replace this later.
 
-- Now open the hardhat.config.js file, we would add the `rinkeby` network here so that we can deploy our contract to rinkeby as shown in this repo...
+- Now open the hardhat.config.js file, we would add the `goerli` network here so that we can deploy our contract to goerli as shown in this repo...
   
 - Compile the contract, open up a terminal pointing at`hardhat` directory and execute this command
 
@@ -116,7 +116,7 @@ yarn add @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ether
   
 - To deploy, open up a terminal pointing at `hardhat` directory and execute this command
   ```bash
-    npx hardhat run scripts/deploy.js --network rinkeby
+    npx hardhat run scripts/deploy.js --network goerli
   ```
 - Save the Crypto Devs Contract Address that was printed on your terminal in your notepad, you would need it futher down in the tutorial.
 
